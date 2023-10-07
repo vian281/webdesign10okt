@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Belajar CSS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* CSS untuk class header */
+        .header {
+            background-color: green;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Setting layout maksimal screen size */
+        @media screen and (max-width:600px) {
+            .columnA, .columnB, .columnC {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:400px) {
+            .columnA, .columnB, .columnC {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header web -->
+    <div class = "header">
+        <h2 style = "color:white;font-size:200%">
+        SMA PLUS PGRI CIBINONG
+    </h2>
+ </div>
+
+<!-- menu web -->
+<div class = "nav_menu">
+    <a href = "#" class="active">Beranda</a>
+    <a href = "page/studentday.html">Studentday</a>
+    <a href = "page/kopasus-it.html">Kopasus IT</a>
+</div>
+
+<!-- konten -->
+<div class = "row">
+    <div class = "columnA">
+        <h2>Column A</h2>
+        <p>Prepare for the Recruitment drive of product
+        based companies like Microsoft, Amazon, Adobe
+        etc with a free online placement preparation 
+        course. The course focuses on various MCQ's
+        & Coding question likely to be asked in the 
+        interviews & make your upcoming placement
+        season efficient and successful.</p>
+    </div>
+
+    <div class = "columnB">
+        <h2>Column B</h2>
+        <p>Prepare for the Recruitment drive of product
+        based companies like Microsoft, Amazon, Adobe
+        etc with a free online placement preparation 
+        course. The course focuses on various MCQ's
+        & Coding question likely to be asked in the 
+        interviews & make your upcoming placement
+        season efficient and successful</p>
+    </div>
+
+    <div class = "columnC">
+        <h2>Column C</h2>
+        <p>Prepare for the Recruitment drive of product
+        based companies like Microsoft, Amazon, Adobe
+        etc with a free online placement preparation 
+        course. The course focuses on various MCQ's
+        & Coding question likely to be asked in the 
+        interviews & make your upcoming placement
+        season efficient and successful.</p>
+    </div>
+</div>
+</body>
+</html>
